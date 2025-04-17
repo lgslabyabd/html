@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+  <title>20 More Unique CSS Buttons</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+    }
+    .btn {
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      margin: 10px;
+      transition: all 0.3s ease;
+      outline: none;
+      background-color: #3498db;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Button 21 - Gradient Background */
+    .btn-21 {
+      background: linear-gradient(45deg, #ff6b6b, #f06595);
+    }
+    .btn-21:hover {
+      background: linear-gradient(45deg, #f06595, #ff6b6b);
+    }
+
+    /* Button 22 - Border Animation */
+    .btn-22::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      border: 2px solid #fff;
+      transition: left 0.5s;
+    }
+    .btn-22:hover::before {
+      left: 0;
+    }
+
+    /* Button 23 - Box Shadow Glow */
+    .btn-23:hover {
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff;
+    }
+
+    /* Button 24 - Sliding Background */
+    .btn-24::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      transition: left 0.5s;
+    }
+    .btn-24:hover::before {
+      left: 0;
+    }
+
+    /* Button 25 - 3D Press Effect */
+    .btn-25:active {
+      transform: scale(0.95);
+      box-shadow: inset 0 0 5px #000;
+    }
+
+    /* Button 26 - Text Slide In */
+    .btn-26::after {
+      content: "→";
+      position: absolute;
+      right: -20px;
+      transition: right 0.3s;
+    }
+    .btn-26:hover::after {
+      right: 10px;
+    }
+
+    /* Button 27 - Flip */
+    .btn-27:hover {
+      transform: rotateY(180deg);
+    }
+
+    /* Button 28 - Skew */
+    .btn-28:hover {
+      transform: skewX(15deg);
+    }
+
+    /* Button 29 - Blur */
+    .btn-29:hover {
+      filter: blur(2px);
+    }
+
+    /* Button 30 - Grayscale */
+    .btn-30:hover {
+      filter: grayscale(100%);
+    }
+
+    /* Button 31 - Sepia */
+    .btn-31:hover {
+      filter: sepia(100%);
+    }
+
+    /* Button 32 - Invert */
+    .btn-32:hover {
+      filter: invert(100%);
+    }
+
+    /* Button 33 - Brightness */
+    .btn-33:hover {
+      filter: brightness(1.2);
+    }
+
+    /* Button 34 - Contrast */
+    .btn-34:hover {
+      filter: contrast(150%);
+    }
+
+    /* Button 35 - Drop Shadow */
+    .btn-35:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Button 36 - Text Shadow */
+    .btn-36:hover {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Button 37 - Zoom */
+    .btn-37:hover {
+      transform: scale(1.2);
+    }
+
+    /* Button 38 - Slide Up */
+    .btn-38:hover {
+      transform: translateY(-10px);
+    }
+
+    /* Button 39 - Slide Down */
+    .btn-39:hover {
+      transform: translateY(10px);
+    }
+
+    /* Button 40 - Slide Left */
+    .btn-40:hover {
+      transform: translateX(-10px);
+    }
+  </style>
+</head>
+<body>
+  <button class="btn btn-21">Button 21</button>
+  <button class="btn btn-22">Button 22</button>
+  <button class="btn btn-23">Button 23</button>
+  <button class="btn btn-24">Button 24</button>
+  <button class="btn btn-25">Button 25</button>
+  <button class="btn btn-26">Button 26</button>
+  <button class="btn btn-27">Button 27</button>
+  <button class="btn btn-28">Button 28</button>
+  <button class="btn btn-29">Button 29</button>
+  <button class="btn btn-30">Button 30</button>
+  <button class="btn btn-31">Button 31</button>
+  <button class="btn btn-32">Button 32</button>
+  <button class="btn btn-33">Button 33</button>
+  <button class="btn btn-34">Button 34</button>
+  <button class="btn btn-35">Button 35</button>
+  <button class="btn btn-36">Button 36</button>
+  <button class="btn btn-37">Button 37</button>
+  <button class="btn btn-38">Button 38</button>
+  <button class="btn btn-39">Button 39</button>
+  <button class="btn btn-40">Button 40</button>
+</body>
+</html>

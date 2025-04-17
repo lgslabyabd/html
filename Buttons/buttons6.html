@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15 Animated Buttons</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f0f0f0;
+            gap: 20px;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+
+        /* Button 1: Scale on Hover */
+        .btn1:hover {
+            transform: scale(1.1);
+        }
+
+        /* Button 2: Color Change */
+        .btn2 {
+            background: #28a745;
+        }
+        .btn2:hover {
+            background: #218838;
+        }
+
+        /* Button 3: Border Expand */
+        .btn3 {
+            position: relative;
+            background: none;
+            color: #dc3545;
+            border: 2px solid #dc3545;
+        }
+        .btn3:hover {
+            color: #fff;
+        }
+        .btn3::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #dc3545;
+            z-index: -1;
+            transition: width 0.3s ease;
+        }
+        .btn3:hover::before {
+            width: 100%;
+        }
+
+        /* Button 4: Rotate */
+        .btn4 {
+            background: #17a2b8;
+        }
+        .btn4:hover {
+            transform: rotate(360deg);
+        }
+
+        /* Button 5: Pulse Animation */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .btn5 {
+            background: #ffc107;
+            animation: pulse 1.5s infinite;
+        }
+
+        /* Button 6: Slide Background */
+        .btn6 {
+            position: relative;
+            background: #6f42c1;
+            overflow: hidden;
+        }
+        .btn6::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: #5a32a3;
+            transition: left 0.3s ease;
+            z-index: -1;
+        }
+        .btn6:hover::before {
+            left: 0;
+        }
+
+        /* Button 7: Shadow Grow */
+        .btn7 {
+            background: #fd7e14;
+        }
+        .btn7:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Button 8: Border Radius Change */
+        .btn8 {
+            background: #20c997;
+            border-radius: 25px;
+        }
+        .btn8:hover {
+            border-radius: 5px;
+        }
+
+        /* Button 9: Text Slide */
+        .btn9 {
+            position: relative;
+            background: #e83e8c;
+            overflow: hidden;
+        }
+        .btn9 span {
+            position: relative;
+            z-index: 1;
+        }
+        .btn9::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: #d63384;
+            transition: left 0.3s ease;
+        }
+        .btn9:hover::before {
+            left: 0;
+        }
+
+        /* Button 10: Neon Glow */
+        .btn10 {
+            background: none;
+            color: #0dcaf0;
+            border: 2px solid #0dcaf0;
+            box-shadow: 0 0 10px #0dcaf0;
+        }
+        .btn10:hover {
+            box-shadow: 0 0 20px #0dcaf0, 0 0 30px #0dcaf0;
+        }
+
+        /* Button 11: Flip */
+        .btn11 {
+            background: #6610f2;
+            transform-style: preserve-3d;
+        }
+        .btn11:hover {
+            transform: rotateX(360deg);
+        }
+
+        /* Button 12: Bounce */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        .btn12 {
+            background: #d63384;
+        }
+        .btn12:hover {
+            animation: bounce 0.4s;
+        }
+
+        /* Button 13: Gradient Shift */
+        .btn13 {
+            background: linear-gradient(45deg, #007bff, #00ff88);
+            background-size: 200%;
+        }
+        .btn13:hover {
+            background-position: right;
+        }
+
+        /* Button 14: Underline Grow */
+        .btn14 {
+            position: relative;
+            background: none;
+            color: #212529;
+            border: none;
+        }
+        .btn14::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #212529;
+            transition: width 0.3s ease;
+        }
+        .btn14:hover::after {
+            width: 100%;
+        }
+
+        /* Button 15: Ripple Effect */
+        .btn15 {
+            position: relative;
+            background: #343a40;
+            overflow: hidden;
+        }
+        .btn15::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.5s ease, height 0.5s ease;
+        }
+        .btn15:hover::after {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="button btn1">Scale Button</a>
+    <a href="#" class="button btn2">Color Change</a>
+    <a href="#" class="button btn3">Border Expand</a>
+    <a href="#" class="button btn4">Rotate Button</a>
+    <a href="#" class="button btn5">Pulse Button</a>
+    <a href="#" class="button btn6">Slide Background</a>
+    <a href="#" class="button btn7">Shadow Grow</a>
+    <a href="#" class="button btn8">Radius Change</a>
+    <a href="#" class="button btn9"><span>Text Slide</span></a>
+    <a href="#" class="button btn10">Neon Glow</a>
+    <a href="#" class="button btn11">Flip Button</a>
+    <a href="#" class="button btn12">Bounce Button</a>
+    <a href="#" class="button btn13">Gradient Shift</a>
+    <a href="#" class="button btn14">Underline Grow</a>
+    <a href="#" class="button btn15">Ripple Effect</a>
+</body>
+</html>

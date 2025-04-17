@@ -16,16 +16,16 @@
             display: grid;
           grid-template-columns: auto;
             min-height: 100%;
-            background-color: #f0f2f5;
+            background-color: #b5b7b9;
             padding: 20px;
         }
 
         .form-container {
-            background: white;
+            background: rgb(243, 235, 235);
             padding: 30px;
             
-            border-radius:2px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius:1px;
+            box-shadow: 0 0 10px rgba(41, 35, 35, 0.1);
             width: 100%;
             height: 100%;
           
@@ -50,7 +50,7 @@
         .form-group input,
         .form-group select {
             padding: 8px;
-            border: 1px solid #ddd;
+            border: 1px solid #8d7b7b;
             border-radius: 1px;
             font-size: 16px;
            
@@ -129,9 +129,9 @@
     </style>
 </head>
 <body>
-    <div class="form-container">
+    <div id="formjs" class="form-container">
         <div>
-        <form class="form-grid">
+        <form  class="form-grid">
             <!-- Row 1 -->
             <div class="form-group">
                 <label for="name">Name</label>
@@ -210,5 +210,9 @@
         </div>
         </form>
     </div>
+    <script src="Form.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="../Gsap/gsap-public/gsap-public/gsap.min.js"></script> 
+    <script src="../Gsap/gsap-public/gsap-public/ScrollTrigger.min.js"></script>
 </body>
 </html>

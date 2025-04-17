@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: grid;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns:15% 60%;
+    background-color: #333;
+    color: white;
+}
+.maintitle{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-family:   monospace;
+    text-transform: uppercase;
+}
+
+.part2{
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap:20px;
+    padding-right:62px;
+
+}
+
+</style>
+<body>
+
+    <div class="nav">
+        <h2 class="maintitle">  TITLE</h2>
+        
+        <div class="part2">
+            <h3>Home</h3>
+            <h3>About</h3>
+            <h3>Contact</h3>
+            <h3>Blog</h3>
+        </div>
+    </div>
+    
+
+
+    <script src="gsap.min.js" > </script>
+    <script src="ScrollTrigger.min.js"></script>
+        
+ <script>
+           const t2=gsap.timeline();
+t2.from("h2",{
+    y:-32,
+    opacity:0,
+    duration:0.1,
+    delay:0.5
+})
+
+t2.from("h3",{
+    y:-30,
+    opacity:0,
+    duration:0.5,
+    delay:0.2,
+    stagger:0.2
+})
+
+
+ </script>
+   
+</body>
+</html>

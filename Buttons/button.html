@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+    }
+    .btn {
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      margin: 10px;
+      transition: all 0.3s ease;
+      outline: none;
+      background-color: #5350dd;
+      color: white;
+    }
+
+    /* Button 1 - Slide In */
+    .btn-1:hover {
+      transform: translateX(10px);
+    }
+
+    /* Button 2 - Scale */
+    .btn-2:hover {
+      transform: scale(1.1);
+    }
+
+    /* Button 3 - Rotate */
+    .btn-3:hover {
+      transform: rotate(15deg);
+    }
+
+    /* Button 4 - Shadow */
+    .btn-4:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Button 5 - Border */
+    .btn-5 {
+      background-color: transparent;
+      color: #8e44ad;
+      border: 2px solid #8e44ad;
+    }
+    .btn-5:hover {
+      background-color: #8e44ad;
+      color: white;
+    }
+
+    /* Button 6 - Underline */
+    .btn-6 {
+      background-color: transparent;
+      color: #16a085;
+      border: none;
+    }
+    .btn-6:hover {
+      text-decoration: underline;
+    }
+
+    /* Button 7 - Background Change */
+    .btn-7:hover {
+      background-color: #2c3e50;
+    }
+
+    /* Button 8 - Pulse */
+    .btn-8:hover {
+      animation: pulse 1s infinite;
+    }
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* Button 9 - Flip */
+    .btn-9:hover {
+      transform: rotateY(180deg);
+    }
+
+    /* Button 10 - Skew */
+    .btn-10:hover {
+      transform: skewX(15deg);
+    }
+
+    /* Button 11 - Blur */
+    .btn-11:hover {
+      filter: blur(2px);
+    }
+
+    /* Button 12 - Grayscale */
+    .btn-12:hover {
+      filter: grayscale(100%);
+    }
+
+    /* Button 13 - Sepia */
+    .btn-13:hover {
+      filter: sepia(100%);
+    }
+
+    /* Button 14 - Invert */
+    .btn-14:hover {
+      filter: invert(100%);
+    }
+
+    /* Button 15 - Brightness */
+    .btn-15:hover {
+      filter: brightness(1.2);
+    }
+
+    /* Button 16 - Contrast */
+    .btn-16:hover {
+      filter: contrast(150%);
+    }
+
+    /* Button 17 - Drop Shadow */
+    .btn-17:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Button 18 - Text Shadow */
+    .btn-18:hover {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Button 19 - Zoom */
+    .btn-19:hover {
+      transform: scale(1.2);
+    }
+
+    /* Button 20 - Slide Up */
+    .btn-20:hover {
+      transform: translateY(-10px);
+    }
+  </style>
+</head>
+<body>
+  <button class="btn btn-1">Button 1</button>
+  <button class="btn btn-2">Button 2</button>
+  <button class="btn btn-3">Button 3</button>
+  <button class="btn btn-4">Button 4</button>
+  <button class="btn btn-5">Button 5</button>
+  <button class="btn btn-6">Button 6</button>
+  <button class="btn btn-7">Button 7</button>
+  <button class="btn btn-8">Button 8</button>
+  <button class="btn btn-9">Button 9</button>
+  <button class="btn btn-10">Button 10</button>
+  <button class="btn btn-11">Button 11</button>
+  <button class="btn btn-12">Button 12</button>
+  <button class="btn btn-13">Button 13</button>
+  <button class="btn btn-14">Button 14</button>
+  <button class="btn btn-15">Button 15</button>
+  <button class="btn btn-16">Button 16</button>
+  <button class="btn btn-17">Button 17</button>
+  <button class="btn btn-18">Button 18</button>
+  <button class="btn btn-19">Button 19</button>
+  <button class="btn btn-20">Button 20</button>
+</body>
+</html>
